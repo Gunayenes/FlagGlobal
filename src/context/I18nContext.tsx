@@ -18,7 +18,7 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("tr");
+  const [locale, setLocale] = useState<Locale>("en");
 
   const switchLocale = useCallback(() => {
     setLocale((prev) => (prev === "tr" ? "en" : "tr"));
