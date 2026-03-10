@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About Us",
     "destinations": "Destinations",
+    "hotels": "Hotels",
     "services": "Services",
     "certificates": "Certificates",
     "contact": "Contact"
@@ -258,6 +259,153 @@
       { "name": "Zeynep Arslan", "role": "Operations Manager", "initial": "ZA" },
       { "name": "Can Aydın", "role": "Sales Director", "initial": "CA" },
       { "name": "Elif Şahin", "role": "Customer Relations", "initial": "EŞ" }
+    ]
+  },
+  "hotels": {
+    "sectionTitle": "Our Hotels",
+    "subtitle": "Comfortable accommodation at our partner hotels",
+    "pageSubtitle": "Discover our partner hotels in Turkey's most beautiful destinations, especially Kuşadası and Bodrum",
+    "allCities": "All Cities",
+    "stars": "Stars",
+    "perNight": "/ night",
+    "features": "Features",
+    "items": [
+      {
+        "name": "Pine Bay Holiday Resort",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "One of Kuşadası's most prestigious holiday villages. An unforgettable vacation experience with private beach, aqua park and all-inclusive concept.",
+        "features": ["Private Beach", "Aqua Park", "SPA", "All-Inclusive", "Kids Club", "Sports Facilities"]
+      },
+      {
+        "name": "Korumar Hotel De Luxe",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Kuşadası's iconic hotel with its position overlooking the turquoise waters of the Aegean Sea and elegant architecture. Private beach and marina access.",
+        "features": ["Sea View", "Private Beach", "Marina", "Fine Dining", "Pool", "Fitness"]
+      },
+      {
+        "name": "DoubleTree by Hilton Kuşadası",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Experience Hilton quality in Kuşadası. A hotel that stands out with its proximity to the city center, modern rooms and superior service.",
+        "features": ["City Center", "Pool", "SPA", "Restaurant", "Meeting Room", "Parking"]
+      },
+      {
+        "name": "Voyage Torba",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "The meeting point of peace and luxury with ultra all-inclusive concept in the turquoise waters of Bodrum's Torba bay.",
+        "features": ["Ultra All-Inclusive", "Private Beach", "Water Sports", "SPA", "Kids Club", "Entertainment"]
+      },
+      {
+        "name": "Kempinski Hotel Barbaros Bay",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "One of Bodrum's most luxurious hotels. A privileged vacation with its unique location in Barbaros Bay, Six Senses SPA and world cuisine restaurants.",
+        "features": ["Luxury SPA", "Private Beach", "Infinity Pool", "Fine Dining", "Yoga", "Water Sports"]
+      },
+      {
+        "name": "Mandarin Oriental Bodrum",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "World-renowned luxury hotel located in Paradise Bay. Your dream vacation with private villas, award-winning SPA center and stunning Aegean views.",
+        "features": ["Private Villa", "Award-Winning SPA", "Private Beach", "Michelin Restaurant", "Boutique Marina", "Helipad"]
+      },
+      {
+        "name": "Casa De Maris SPA & Resort",
+        "city": "Marmaris",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "A comfortable vacation on the turquoise shores of Marmaris. Ideal for families and couples with spacious SPA area and beach facilities.",
+        "features": ["SPA & Wellness", "Private Beach", "Aqua Park", "Animation", "Kids Club", "Pool"]
+      },
+      {
+        "name": "Titanic Deluxe Belek",
+        "city": "Antalya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "One of Belek's most magnificent hotels. Ultra luxury vacation with 8 restaurants, massive pools and private golf course.",
+        "features": ["Golf Course", "8 Restaurants", "Aqua Park", "SPA", "Private Beach", "Night Club"]
+      },
+      {
+        "name": "Rixos Premium Belek",
+        "city": "Antalya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "A unique vacation experience in Antalya Belek with all-inclusive luxury concept. Famous artist concerts and world cuisine.",
+        "features": ["Ultra All-Inclusive", "Concerts", "SPA", "Private Beach", "Golf", "Kids World"]
+      },
+      {
+        "name": "Alaiye Resort & SPA",
+        "city": "Alanya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "All-inclusive comfortable vacation with beachfront location in the center of Alanya. Walking distance to Cleopatra Beach.",
+        "features": ["Beachfront", "All-Inclusive", "SPA", "Pool", "Restaurant", "Beach"]
+      },
+      {
+        "name": "Swissotel The Bosphorus",
+        "city": "Istanbul",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Iconic Istanbul hotel with Bosphorus view. Luxury accommodation in the heart of the city, world-class SPA and gastronomy experience.",
+        "features": ["Bosphorus View", "SPA", "Fine Dining", "Pool", "Fitness", "City Center"]
+      },
+      {
+        "name": "Museum Hotel",
+        "city": "Cappadocia",
+        "region": "central",
+        "stars": 5,
+        "description": "A unique accommodation experience with cave rooms in the heart of Cappadocia. Luxury with a view of fairy chimneys.",
+        "features": ["Cave Room", "Terrace View", "Fine Dining", "SPA", "Balloon Organization", "Pool"]
+      },
+      {
+        "name": "Radisson Blu Hotel Trabzon",
+        "city": "Trabzon",
+        "region": "blacksea",
+        "stars": 5,
+        "description": "Comfortable accommodation in the city center of Trabzon, the pearl of the Black Sea. Ideal for business and leisure travel.",
+        "features": ["City Center", "Sea View", "Restaurant", "Meeting Room", "SPA", "Parking"]
+      },
+      {
+        "name": "Ayder Resort Hotel",
+        "city": "Rize",
+        "region": "blacksea",
+        "stars": 4,
+        "description": "Peaceful accommodation immersed in nature in the heart of Ayder Plateau. A relaxing vacation with thermal springs and plateau views.",
+        "features": ["Thermal Pool", "Plateau View", "Nature Walks", "Restaurant", "Fireplace", "Parking"]
+      },
+      {
+        "name": "Çelik Palas Hotel",
+        "city": "Bursa",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Bursa's historic thermal hotel. A thermal accommodation experience combining Ottoman architecture with modern comfort.",
+        "features": ["Thermal Pool", "Historic Building", "SPA", "Restaurant", "Uludağ View", "Parking"]
+      },
+      {
+        "name": "Kolin Hotel",
+        "city": "Çanakkale",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Modern hotel with Çanakkale Strait view. Ideal for cultural tourism with its proximity to the historic peninsula.",
+        "features": ["Strait View", "Pool", "SPA", "Restaurant", "Meeting Room", "Parking"]
+      },
+      {
+        "name": "JW Marriott Hotel Ankara",
+        "city": "Ankara",
+        "region": "central",
+        "stars": 5,
+        "description": "One of the capital's most prestigious hotels. The luxury hotel in Kavaklıdere, perfect for business and leisure travel.",
+        "features": ["City Center", "SPA", "Fine Dining", "Pool", "Fitness", "Meeting Room"]
+      }
     ]
   },
   "faq": {

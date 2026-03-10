@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "destinations": "Destinasyonlar",
+    "hotels": "Oteller",
     "services": "Hizmetler",
     "certificates": "Belgeler",
     "contact": "İletişim"
@@ -258,6 +259,153 @@
       { "name": "Zeynep Arslan", "role": "Operasyon Müdürü", "initial": "ZA" },
       { "name": "Can Aydın", "role": "Satış Direktörü", "initial": "CA" },
       { "name": "Elif Şahin", "role": "Müşteri İlişkileri", "initial": "EŞ" }
+    ]
+  },
+  "hotels": {
+    "sectionTitle": "Otellerimiz",
+    "subtitle": "Anlaşmalı otellerimizde konforlu konaklama",
+    "pageSubtitle": "Kuşadası ve Bodrum başta olmak üzere Türkiye'nin en güzel destinasyonlarındaki anlaşmalı otellerimizi keşfedin",
+    "allCities": "Tüm Şehirler",
+    "stars": "Yıldız",
+    "perNight": "/ gece",
+    "features": "Özellikler",
+    "items": [
+      {
+        "name": "Pine Bay Holiday Resort",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Kuşadası'nın en prestijli tatil köylerinden biri. Özel plajı, aqua parkı ve her şey dahil konseptiyle unutulmaz bir tatil deneyimi.",
+        "features": ["Özel Plaj", "Aqua Park", "SPA", "Her Şey Dahil", "Çocuk Kulübü", "Spor Tesisleri"]
+      },
+      {
+        "name": "Korumar Hotel De Luxe",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Ege Denizi'nin turkuaz sularına hakim konumu ve zarif mimarisiyle Kuşadası'nın simge oteli. Özel plaj ve marina imkanı.",
+        "features": ["Deniz Manzarası", "Özel Plaj", "Marina", "Fine Dining", "Havuz", "Fitness"]
+      },
+      {
+        "name": "DoubleTree by Hilton Kuşadası",
+        "city": "Kuşadası",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Hilton kalitesini Kuşadası'nda yaşayın. Şehir merkezine yakın konumu, modern odaları ve üstün hizmet anlayışıyla fark yaratan otel.",
+        "features": ["Şehir Merkezi", "Havuz", "SPA", "Restoran", "Toplantı Salonu", "Otopark"]
+      },
+      {
+        "name": "Voyage Torba",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Bodrum Torba koyunun turkuaz sularında ultra her şey dahil konseptiyle huzur ve lüksün buluşma noktası.",
+        "features": ["Ultra Her Şey Dahil", "Özel Plaj", "Su Sporları", "SPA", "Çocuk Kulübü", "Gece Eğlence"]
+      },
+      {
+        "name": "Kempinski Hotel Barbaros Bay",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Bodrum'un en lüks otellerinden biri. Barbaros Koyu'ndaki eşsiz konumu, Six Senses SPA'sı ve dünya mutfağı restoranlarıyla ayrıcalıklı tatil.",
+        "features": ["Lüks SPA", "Özel Plaj", "Infinity Havuz", "Fine Dining", "Yoga", "Su Sporları"]
+      },
+      {
+        "name": "Mandarin Oriental Bodrum",
+        "city": "Bodrum",
+        "region": "aegean",
+        "stars": 5,
+        "description": "Paradise Bay'de konumlanan dünyaca ünlü lüks otel. Özel villaları, ödüllü SPA merkezi ve muhteşem Ege manzarasıyla hayalinizdeki tatil.",
+        "features": ["Özel Villa", "Ödüllü SPA", "Özel Plaj", "Michelin Restoran", "Butik Marina", "Helipad"]
+      },
+      {
+        "name": "Casa De Maris SPA & Resort",
+        "city": "Marmaris",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "Marmaris'in turkuaz kıyılarında konforlu bir tatil. Geniş SPA alanı ve plaj imkanlarıyla ailelere ve çiftlere ideal.",
+        "features": ["SPA & Wellness", "Özel Plaj", "Aqua Park", "Animasyon", "Çocuk Kulübü", "Havuz"]
+      },
+      {
+        "name": "Titanic Deluxe Belek",
+        "city": "Antalya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "Belek'in en görkemli otellerinden biri. 8 restoran, devasa havuzlar ve özel golf sahası ile ultra lüks tatil.",
+        "features": ["Golf Sahası", "8 Restoran", "Aqua Park", "SPA", "Özel Plaj", "Gece Kulübü"]
+      },
+      {
+        "name": "Rixos Premium Belek",
+        "city": "Antalya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "All-inclusive lüks konseptiyle Antalya Belek'te eşsiz bir tatil deneyimi. Ünlü sanatçı konserleri ve dünya mutfağı.",
+        "features": ["Ultra All-Inclusive", "Konserler", "SPA", "Özel Plaj", "Golf", "Çocuk Dünyası"]
+      },
+      {
+        "name": "Alaiye Resort & SPA",
+        "city": "Alanya",
+        "region": "mediterranean",
+        "stars": 5,
+        "description": "Alanya'nın merkezinde denize sıfır konumuyla her şey dahil konforlu tatil. Kleopatra Plajı'na yürüme mesafesinde.",
+        "features": ["Denize Sıfır", "Her Şey Dahil", "SPA", "Havuz", "Restoran", "Plaj"]
+      },
+      {
+        "name": "Swissotel The Bosphorus",
+        "city": "İstanbul",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Boğaz manzaralı ikonik İstanbul oteli. Şehrin kalbinde lüks konaklama, dünya standartlarında SPA ve gastronomi deneyimi.",
+        "features": ["Boğaz Manzarası", "SPA", "Fine Dining", "Havuz", "Fitness", "Şehir Merkezi"]
+      },
+      {
+        "name": "Museum Hotel",
+        "city": "Kapadokya",
+        "region": "central",
+        "stars": 5,
+        "description": "Kapadokya'nın kalbinde, mağara odalarıyla benzersiz bir konaklama deneyimi. Peri bacaları manzarası eşliğinde lüks.",
+        "features": ["Mağara Oda", "Teras Manzara", "Fine Dining", "SPA", "Balon Organizasyonu", "Havuz"]
+      },
+      {
+        "name": "Radisson Blu Hotel Trabzon",
+        "city": "Trabzon",
+        "region": "blacksea",
+        "stars": 5,
+        "description": "Karadeniz'in incisi Trabzon'da şehir merkezinde konforlu konaklama. İş ve tatil seyahatleri için ideal.",
+        "features": ["Şehir Merkezi", "Deniz Manzarası", "Restoran", "Toplantı Salonu", "SPA", "Otopark"]
+      },
+      {
+        "name": "Ayder Resort Hotel",
+        "city": "Rize",
+        "region": "blacksea",
+        "stars": 4,
+        "description": "Ayder Yaylası'nın kalbinde doğayla iç içe huzurlu bir konaklama. Termal kaynakları ve yayla manzarasıyla dinlendirici tatil.",
+        "features": ["Termal Havuz", "Yayla Manzarası", "Doğa Yürüyüşü", "Restoran", "Şömine", "Otopark"]
+      },
+      {
+        "name": "Çelik Palas Hotel",
+        "city": "Bursa",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Bursa'nın tarihi termal oteli. Osmanlı mimarisi ile modern konforu buluşturan termal konaklama deneyimi.",
+        "features": ["Termal Havuz", "Tarihi Bina", "SPA", "Restoran", "Uludağ Manzarası", "Otopark"]
+      },
+      {
+        "name": "Kolin Hotel",
+        "city": "Çanakkale",
+        "region": "marmara",
+        "stars": 5,
+        "description": "Çanakkale Boğazı manzaralı modern otel. Tarihi yarımadaya yakın konumuyla kültür turizmi için ideal.",
+        "features": ["Boğaz Manzarası", "Havuz", "SPA", "Restoran", "Toplantı Salonu", "Otopark"]
+      },
+      {
+        "name": "JW Marriott Hotel Ankara",
+        "city": "Ankara",
+        "region": "central",
+        "stars": 5,
+        "description": "Başkentin en prestijli otellerinden biri. Kavaklıdere'de konumlanan lüks otel, iş ve leisure seyahatleri için mükemmel.",
+        "features": ["Şehir Merkezi", "SPA", "Fine Dining", "Havuz", "Fitness", "Toplantı Salonu"]
+      }
     ]
   },
   "faq": {
