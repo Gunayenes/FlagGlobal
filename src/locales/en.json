@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "destinations": "Destinations",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover Your Dream Vacation",
+    "subtitle": "Experience unforgettable travel journeys with Flag Global",
+    "cta": "Explore Destinations"
+  },
+  "about": {
+    "sectionTitle": "About Us",
+    "shortDesc": "At Flag Global, we offer unique experiences to travel enthusiasts. With years of expertise, we create personalized and unforgettable vacation plans for each of our clients.",
+    "story": "Flag Global was founded in 2015 with an innovative vision for the tourism industry. Since our establishment, we have served thousands of happy customers and introduced Turkey's most beautiful destinations to the world. With our experienced team and extensive partner network, we offer travel solutions suitable for every budget and taste.",
+    "mission": "Our mission is to make a difference in the tourism industry by providing personalized, reliable, and unforgettable travel experiences to each of our clients.",
+    "vision": "Our vision is to serve at world-class standards with a sustainable tourism approach, as one of Turkey's leading tourism companies.",
+    "values": "Our Values",
+    "valuesList": [
+      "Customer satisfaction comes first",
+      "Transparency and reliability",
+      "Innovative approach",
+      "Sustainable tourism",
+      "No compromise on quality"
+    ]
+  },
+  "destinations": {
+    "sectionTitle": "Featured Destinations",
+    "subtitle": "Discover the most beautiful places in Turkey",
+    "items": [
+      {
+        "name": "Antalya",
+        "description": "The pearl of the Mediterranean with its turquoise waters, golden beaches, and historical richness. Antalya is a unique holiday paradise where nature and history meet in perfect harmony."
+      },
+      {
+        "name": "Bodrum",
+        "description": "Enchanting Bodrum with its blue-flag beaches, historic castle, and vibrant nightlife. An unforgettable vacation experience with luxury marinas and authentic stone houses."
+      },
+      {
+        "name": "Cappadocia",
+        "description": "A fairytale world with fairy chimneys, underground cities, and hot air balloons. Cappadocia is a unique place created by nature and history together."
+      },
+      {
+        "name": "Istanbul",
+        "description": "The megacity bridging two continents, blending thousands of years of history with modern life. A unique experience from Hagia Sophia to the Grand Bazaar, from the Bosphorus to the Islands."
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "subtitle": "We are here to offer you the best travel experience",
+    "items": [
+      {
+        "title": "Package Tours",
+        "description": "Live your dream vacation with carefully planned tour packages suitable for every budget."
+      },
+      {
+        "title": "Hotel Reservation",
+        "description": "Accommodation opportunities at thousands of hotels worldwide with best price guarantee."
+      },
+      {
+        "title": "Transfer Services",
+        "description": "Comfortable and safe transfer solutions from airport transfers to city transportation."
+      },
+      {
+        "title": "Guide Services",
+        "description": "Cultural and historical tours accompanied by our professional and experienced guides."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Why Flag Global?",
+    "items": [
+      {
+        "title": "Reliable Service",
+        "description": "A trusted travel partner with years of experience and thousands of happy customers."
+      },
+      {
+        "title": "Affordable Prices",
+        "description": "Vacation options that fit your budget with best price guarantee."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Professional support team by your side throughout your journey."
+      },
+      {
+        "title": "Personalized Planning",
+        "description": "Customized travel programs tailored to your needs."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start Your Dream Vacation Today",
+    "subtitle": "Collect unforgettable memories with Flag Global. Contact us now.",
+    "button": "Get In Touch"
+  },
+  "certificates": {
+    "sectionTitle": "Documents & Certificates",
+    "subtitle": "We prove our reliability with our certifications",
+    "companyDocs": "Company Documents",
+    "companyDocsList": [
+      "TÜRSAB Membership Certificate",
+      "Trade Registry Gazette",
+      "Tax Certificate",
+      "Business License"
+    ],
+    "partners": "Our Partners",
+    "tourismCerts": "Tourism Certificates",
+    "tourismCertsList": [
+      "IATA Accreditation",
+      "UNWTO Membership",
+      "ISO 9001 Quality Certificate",
+      "Sustainable Tourism Certificate"
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "subtitle": "Get in touch with us, we're happy to help",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Istanbul, Turkey",
+    "whatsapp": "Contact via WhatsApp"
+  },
+  "footer": {
+    "description": "Flag Global is a leading travel company offering reliable and professional tourism services.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "rights": "All rights reserved."
+  },
+  "stats": {
+    "items": [
+      { "value": 5000, "suffix": "+", "label": "Happy Customers" },
+      { "value": 50, "suffix": "+", "label": "Destinations" },
+      { "value": 10, "suffix": "+", "label": "Years Experience" },
+      { "value": 200, "suffix": "+", "label": "Partners" }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "Customer Reviews",
+    "subtitle": "Hear from our satisfied customers",
+    "items": [
+      {
+        "name": "Ayşe Yılmaz",
+        "location": "Istanbul",
+        "text": "Our Cappadocia tour with Flag Global was magnificent. Everything was perfectly planned, and our guide was very knowledgeable. We will definitely choose them again!"
+      },
+      {
+        "name": "Mehmet Kaya",
+        "location": "Ankara",
+        "text": "We chose Flag Global for our Bodrum vacation and were very satisfied. Hotel selection, transfers, and every detail was thoughtfully arranged."
+      },
+      {
+        "name": "Fatma Demir",
+        "location": "Izmir",
+        "text": "Our Antalya package tour was wonderful. The price-performance ratio was excellent. Our children had a great time too. Thank you Flag Global!"
+      },
+      {
+        "name": "Ali Özkan",
+        "location": "Bursa",
+        "text": "The Istanbul tour exceeded our expectations. Professional guidance and flawless organization. I recommend it to everyone."
+      }
+    ]
+  },
+  "team": {
+    "sectionTitle": "Our Team",
+    "subtitle": "Meet our experienced and passionate team",
+    "members": [
+      { "name": "Ahmet Yıldız", "role": "General Manager", "initial": "AY" },
+      { "name": "Zeynep Arslan", "role": "Operations Manager", "initial": "ZA" },
+      { "name": "Can Aydın", "role": "Sales Director", "initial": "CA" },
+      { "name": "Elif Şahin", "role": "Customer Relations", "initial": "EŞ" }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "subtitle": "We answer your questions",
+    "items": [
+      {
+        "question": "How can I make a tour reservation?",
+        "answer": "You can make a reservation by contacting us through our website or via our WhatsApp line (+90 544 470 62 00). Our expert team will offer you the most suitable tour options."
+      },
+      {
+        "question": "What is your cancellation and refund policy?",
+        "answer": "Full refund is provided for cancellations made up to 7 days before the tour start date. For detailed information, please contact our customer service."
+      },
+      {
+        "question": "Do you offer transfer services?",
+        "answer": "Yes, VIP airport-hotel transfer service is included in all our tour packages. You can also request private city transfer service."
+      },
+      {
+        "question": "Are there special discounts for children?",
+        "answer": "Children aged 0-6 are free, and children aged 7-12 can join our tours with a 50% discount."
+      },
+      {
+        "question": "Do you organize private group tours?",
+        "answer": "Yes, we prepare customized tour programs for corporate events, wedding groups, and special organizations. Contact us for details."
+      }
+    ]
+  }
+}

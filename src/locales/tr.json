@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "destinations": "Destinasyonlar",
+    "certificates": "Belgeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Hayalinizdeki Tatili Keşfedin",
+    "subtitle": "Flag Global ile unutulmaz seyahat deneyimleri yaşayın",
+    "cta": "Destinasyonları Keşfet"
+  },
+  "about": {
+    "sectionTitle": "Hakkımızda",
+    "shortDesc": "Flag Global olarak, seyahat tutkunlarına benzersiz deneyimler sunuyoruz. Yılların tecrübesiyle, her müşterimize özel ve unutulmaz tatil planları oluşturuyoruz.",
+    "story": "Flag Global, 2015 yılında turizm sektörüne yenilikçi bir bakış açısı getirmek amacıyla kurulmuştur. Kuruluşumuzdan bu yana, binlerce mutlu müşterimize hizmet verdik ve Türkiye'nin en güzel destinasyonlarını dünyaya tanıttık. Deneyimli ekibimiz ve geniş iş ortağı ağımızla, her bütçeye ve her zevke uygun seyahat çözümleri sunuyoruz.",
+    "mission": "Misyonumuz, her müşterimize kişiselleştirilmiş, güvenilir ve unutulmaz seyahat deneyimleri sunarak turizm sektöründe fark yaratmaktır.",
+    "vision": "Vizyonumuz, Türkiye'nin lider turizm şirketlerinden biri olarak, sürdürülebilir turizm anlayışıyla dünya standartlarında hizmet vermektir.",
+    "values": "Değerlerimiz",
+    "valuesList": [
+      "Müşteri memnuniyeti her şeyin önünde",
+      "Şeffaflık ve güvenilirlik",
+      "Yenilikçi yaklaşım",
+      "Sürdürülebilir turizm",
+      "Kaliteden ödün vermeme"
+    ]
+  },
+  "destinations": {
+    "sectionTitle": "Öne Çıkan Destinasyonlar",
+    "subtitle": "Türkiye'nin en güzel yerlerini keşfedin",
+    "items": [
+      {
+        "name": "Antalya",
+        "description": "Turkuaz suları, altın kumsalları ve tarihi zenginlikleriyle Akdeniz'in incisi. Antalya, doğa ve tarihin mükemmel bir uyum içinde buluştuğu eşsiz bir tatil cenneti."
+      },
+      {
+        "name": "Bodrum",
+        "description": "Ege'nin mavi bayraklı plajları, tarihi kalesi ve canlı gece hayatıyla büyüleyen Bodrum. Lüks marinalar ve otantik taş evleriyle unutulmaz bir tatil deneyimi."
+      },
+      {
+        "name": "Kapadokya",
+        "description": "Peri bacaları, yeraltı şehirleri ve sıcak hava balonlarıyla masalsı bir dünya. Kapadokya, doğanın ve tarihin birlikte yarattığı eşsiz bir mekan."
+      },
+      {
+        "name": "İstanbul",
+        "description": "İki kıtayı birleştiren, binlerce yıllık tarihi ve modern yaşamı harmanlayan megakent. Ayasofya'dan Kapalıçarşı'ya, Boğaz'dan Adalar'a uzanan eşsiz bir deneyim."
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Hizmetlerimiz",
+    "subtitle": "Size en iyi seyahat deneyimini sunmak için buradayız",
+    "items": [
+      {
+        "title": "Paket Turlar",
+        "description": "Her bütçeye uygun, özenle planlanmış tur paketleri ile hayalinizdeki tatili yaşayın."
+      },
+      {
+        "title": "Otel Rezervasyonu",
+        "description": "Dünya genelinde binlerce otelde en uygun fiyat garantisi ile konaklama imkanı."
+      },
+      {
+        "title": "Transfer Hizmetleri",
+        "description": "Havalimanı transferinden şehir içi ulaşıma kadar konforlu ve güvenli transfer çözümleri."
+      },
+      {
+        "title": "Rehberlik Hizmetleri",
+        "description": "Profesyonel ve deneyimli rehberlerimiz eşliğinde kültürel ve tarihi turlar."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Neden Flag Global?",
+    "items": [
+      {
+        "title": "Güvenilir Hizmet",
+        "description": "Yılların deneyimi ve binlerce mutlu müşteri ile güvenilir seyahat partneri."
+      },
+      {
+        "title": "Uygun Fiyat",
+        "description": "En iyi fiyat garantisi ile bütçenize uygun tatil seçenekleri."
+      },
+      {
+        "title": "7/24 Destek",
+        "description": "Seyahatiniz boyunca yanınızda olan profesyonel destek ekibi."
+      },
+      {
+        "title": "Kişiye Özel Planlama",
+        "description": "İhtiyaçlarınıza göre özelleştirilmiş seyahat programları."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Hayalinizdeki Tatile Bugün Başlayın",
+    "subtitle": "Flag Global ile unutulmaz anılar biriktirin. Hemen bizimle iletişime geçin.",
+    "button": "İletişime Geçin"
+  },
+  "certificates": {
+    "sectionTitle": "Belgeler ve Sertifikalar",
+    "subtitle": "Güvenilirliğimizi belgelerimizle kanıtlıyoruz",
+    "companyDocs": "Şirket Belgeleri",
+    "companyDocsList": [
+      "TÜRSAB Üyelik Belgesi",
+      "Ticaret Sicil Gazetesi",
+      "Vergi Levhası",
+      "İşletme Belgesi"
+    ],
+    "partners": "İş Ortaklarımız",
+    "tourismCerts": "Turizm Sertifikaları",
+    "tourismCertsList": [
+      "IATA Akreditasyonu",
+      "UNWTO Üyeliği",
+      "ISO 9001 Kalite Belgesi",
+      "Sürdürülebilir Turizm Sertifikası"
+    ]
+  },
+  "contact": {
+    "sectionTitle": "İletişim",
+    "subtitle": "Bizimle iletişime geçin, size yardımcı olalım",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres",
+    "addressValue": "İstanbul, Türkiye",
+    "whatsapp": "WhatsApp ile İletişime Geçin"
+  },
+  "footer": {
+    "description": "Flag Global, güvenilir ve profesyonel turizm hizmetleri sunan lider bir seyahat şirketidir.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "stats": {
+    "items": [
+      { "value": 5000, "suffix": "+", "label": "Mutlu Müşteri" },
+      { "value": 50, "suffix": "+", "label": "Destinasyon" },
+      { "value": 10, "suffix": "+", "label": "Yıl Deneyim" },
+      { "value": 200, "suffix": "+", "label": "İş Ortağı" }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "Müşteri Yorumları",
+    "subtitle": "Müşterilerimizin deneyimlerini dinleyin",
+    "items": [
+      {
+        "name": "Ayşe Yılmaz",
+        "location": "İstanbul",
+        "text": "Flag Global ile Kapadokya turumuz muhteşemdi. Her şey mükemmel planlanmıştı, rehberimiz çok bilgiliydi. Kesinlikle tekrar tercih edeceğiz!"
+      },
+      {
+        "name": "Mehmet Kaya",
+        "location": "Ankara",
+        "text": "Bodrum tatilimiz için Flag Global'ı tercih ettik ve çok memnun kaldık. Otel seçimi, transfer ve her detay özenle düşünülmüştü."
+      },
+      {
+        "name": "Fatma Demir",
+        "location": "İzmir",
+        "text": "Antalya paket turumuz harika geçti. Fiyat-performans oranı mükemmeldi. Çocuklarımız da çok eğlendi. Teşekkürler Flag Global!"
+      },
+      {
+        "name": "Ali Özkan",
+        "location": "Bursa",
+        "text": "İstanbul turu beklentilerimizin çok üzerindeydi. Profesyonel rehberlik ve kusursuz organizasyon. Herkese tavsiye ediyorum."
+      }
+    ]
+  },
+  "team": {
+    "sectionTitle": "Ekibimiz",
+    "subtitle": "Deneyimli ve tutkulu ekibimizle tanışın",
+    "members": [
+      { "name": "Ahmet Yıldız", "role": "Genel Müdür", "initial": "AY" },
+      { "name": "Zeynep Arslan", "role": "Operasyon Müdürü", "initial": "ZA" },
+      { "name": "Can Aydın", "role": "Satış Direktörü", "initial": "CA" },
+      { "name": "Elif Şahin", "role": "Müşteri İlişkileri", "initial": "EŞ" }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Sıkça Sorulan Sorular",
+    "subtitle": "Merak ettiklerinizi yanıtlıyoruz",
+    "items": [
+      {
+        "question": "Tur rezervasyonumu nasıl yapabilirim?",
+        "answer": "Web sitemiz üzerinden veya WhatsApp hattımızdan (+90 544 470 62 00) bizimle iletişime geçerek rezervasyon yapabilirsiniz. Uzman ekibimiz size en uygun tur seçeneklerini sunacaktır."
+      },
+      {
+        "question": "İptal ve iade politikanız nedir?",
+        "answer": "Tur başlangıç tarihinden 7 gün öncesine kadar yapılan iptallerde tam iade sağlanmaktadır. Detaylı bilgi için müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      },
+      {
+        "question": "Transfer hizmetiniz var mı?",
+        "answer": "Evet, tüm tur paketlerimizde havalimanı-otel arası VIP transfer hizmeti dahildir. Ayrıca şehir içi özel transfer hizmeti de talep edebilirsiniz."
+      },
+      {
+        "question": "Çocuklar için özel indirim var mı?",
+        "answer": "0-6 yaş arası çocuklarımız ücretsiz, 7-12 yaş arası çocuklarımız ise %50 indirimli olarak turlarımıza katılabilir."
+      },
+      {
+        "question": "Özel grup turları düzenliyor musunuz?",
+        "answer": "Evet, kurumsal etkinlikler, düğün grupları ve özel organizasyonlar için kişiye özel tur programları hazırlıyoruz. Detaylar için bizimle iletişime geçin."
+      }
+    ]
+  }
+}
