@@ -15,13 +15,13 @@ const destinationImages: Record<string, string> = {
   "Alanya": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
   "İstanbul": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80",
   "Istanbul": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80",
-  "Çanakkale": "https://images.unsplash.com/photo-1568781269951-b50a89d02c68?w=800&q=80",
-  "Bursa": "https://images.unsplash.com/photo-1564594326930-fd1072c5e01a?w=800&q=80",
+  "Çanakkale": "https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&q=80",
+  "Bursa": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
   "Kapadokya": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&q=80",
   "Cappadocia": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&q=80",
-  "Ankara": "https://images.unsplash.com/photo-1594817563715-8a4e1fa47e1e?w=800&q=80",
+  "Ankara": "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?w=800&q=80",
   "Trabzon": "https://images.unsplash.com/photo-1572953109213-3be62398eb95?w=800&q=80",
-  "Rize": "https://images.unsplash.com/photo-1624367171718-14026220f3b1?w=800&q=80",
+  "Rize": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
 };
 
 const regionIcons: Record<string, string> = {
