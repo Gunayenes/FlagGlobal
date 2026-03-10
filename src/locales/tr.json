@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "destinations": "Destinasyonlar",
+    "services": "Hizmetler",
     "certificates": "Belgeler",
     "contact": "İletişim"
   },
@@ -29,44 +30,129 @@
   "destinations": {
     "sectionTitle": "Öne Çıkan Destinasyonlar",
     "subtitle": "Türkiye'nin en güzel yerlerini keşfedin",
+    "allRegions": "Tüm Bölgeler",
+    "regions": {
+      "aegean": "Ege",
+      "mediterranean": "Akdeniz",
+      "marmara": "Marmara",
+      "blacksea": "Karadeniz",
+      "central": "İç Anadolu"
+    },
     "items": [
       {
-        "name": "Antalya",
-        "description": "Turkuaz suları, altın kumsalları ve tarihi zenginlikleriyle Akdeniz'in incisi. Antalya, doğa ve tarihin mükemmel bir uyum içinde buluştuğu eşsiz bir tatil cenneti."
+        "name": "Kuşadası",
+        "region": "aegean",
+        "description": "Antik Efes'in kapısı, Güvercinada, Pamucak Plajları, Kadınlar Denizi ve Milli Park ile çevrili. Doğa, lüks oteller ve leziz yerel mutfağın mükemmel harmanı.",
+        "highlights": ["Efes Antik Kenti", "Meryem Ana Evi", "Şirince Köyü", "Güvercinada"]
       },
       {
         "name": "Bodrum",
-        "description": "Ege'nin mavi bayraklı plajları, tarihi kalesi ve canlı gece hayatıyla büyüleyen Bodrum. Lüks marinalar ve otantik taş evleriyle unutulmaz bir tatil deneyimi."
+        "region": "aegean",
+        "description": "Ege'nin mavi bayraklı plajları, tarihi kalesi ve canlı gece hayatıyla büyüleyen Bodrum. Lüks marinalar ve otantik taş evleriyle unutulmaz bir tatil deneyimi.",
+        "highlights": ["Bodrum Kalesi", "Halikarnas", "Gümbet", "Bitez"]
       },
       {
-        "name": "Kapadokya",
-        "description": "Peri bacaları, yeraltı şehirleri ve sıcak hava balonlarıyla masalsı bir dünya. Kapadokya, doğanın ve tarihin birlikte yarattığı eşsiz bir mekan."
+        "name": "Muğla",
+        "region": "aegean",
+        "description": "Güneşin, mavinin ve yeşilin iç içe geçtiği Muğla. Yüzlerce antik kent ve kalıntı, 8.000 yıllık tarihe ışık tutuyor; turkuaz sular ve el değmemiş koylar.",
+        "highlights": ["Dalyan", "Ölüdeniz", "Fethiye", "Kayaköy"]
+      },
+      {
+        "name": "İzmir",
+        "region": "aegean",
+        "description": "Ege'nin incisi, tarihi Kemeraltı Çarşısı, Kordon Boyu ve çevre ilçelerindeki antik kentleriyle büyüleyen güzel şehir.",
+        "highlights": ["Kemeraltı", "Kordon", "Çeşme", "Alaçatı"]
+      },
+      {
+        "name": "Antalya",
+        "region": "mediterranean",
+        "description": "Deniz, güneş, tarih ve doğanın mükemmel uyum yakaladığı şehir. Atatürk 'Hiç şüphesiz dünyanın en güzel yeri' diye tanımlamıştır.",
+        "highlights": ["Aspendos", "Kaleiçi", "Düden Şelalesi", "Konyaaltı Plajı"]
+      },
+      {
+        "name": "Marmaris",
+        "region": "mediterranean",
+        "description": "Ege ve Akdeniz'in buluştuğu muhteşem bir kruvaziyer limanı. Yelken, dalış ve sahil boyunca gizli koyları keşfetmek için mükemmel.",
+        "highlights": ["Dalaman", "İçmeler", "Tekne Turları", "Tarihi Çarşı"]
+      },
+      {
+        "name": "Alanya",
+        "region": "mediterranean",
+        "description": "Kleopatra Plajı, tarihi kalesi ve eşsiz doğal güzellikleriyle Akdeniz'in gözbebeği. Hem tarihi hem modern tatil anlayışının buluştuğu şehir.",
+        "highlights": ["Kleopatra Plajı", "Alanya Kalesi", "Dim Çayı", "Damlataş Mağarası"]
       },
       {
         "name": "İstanbul",
-        "description": "İki kıtayı birleştiren, binlerce yıllık tarihi ve modern yaşamı harmanlayan megakent. Ayasofya'dan Kapalıçarşı'ya, Boğaz'dan Adalar'a uzanan eşsiz bir deneyim."
+        "region": "marmara",
+        "description": "İki kıtayı birleştiren, binlerce yıllık tarihi ve modern yaşamı harmanlayan megakent. Ayasofya'dan Kapalıçarşı'ya, Boğaz'dan Adalar'a uzanan eşsiz bir deneyim.",
+        "highlights": ["Ayasofya", "Topkapı Sarayı", "Kapalıçarşı", "Boğaz Turu"]
+      },
+      {
+        "name": "Çanakkale",
+        "region": "marmara",
+        "description": "Tarihin sayfalarından fırlamış bir şehir. Gelibolu Yarımadası, Truva Antik Kenti ve Boğaz manzarasıyla dolu bir kültür hazinesi.",
+        "highlights": ["Truva", "Gelibolu", "Bozcaada", "Şehitlik"]
+      },
+      {
+        "name": "Bursa",
+        "region": "marmara",
+        "description": "Osmanlı'nın ilk başkenti, Uludağ'ın eteklerinde yeşilin bin bir tonuyla bezeli. Tarihi ipek yolu, termal kaynakları ve İskender kebabıyla ünlü.",
+        "highlights": ["Uludağ", "Cumalıkızık", "Ulu Cami", "Koza Han"]
+      },
+      {
+        "name": "Kapadokya",
+        "region": "central",
+        "description": "Peri bacaları, yeraltı şehirleri ve sıcak hava balonlarıyla masalsı bir dünya. Kapadokya, doğanın ve tarihin birlikte yarattığı eşsiz bir mekan.",
+        "highlights": ["Balon Turu", "Göreme", "Yeraltı Şehirleri", "Ihlara Vadisi"]
+      },
+      {
+        "name": "Ankara",
+        "region": "central",
+        "description": "Türkiye Cumhuriyeti'nin başkenti, Anıtkabir ve müzeleriyle modern Türkiye'nin kalbi. Anadolu medeniyetlerinin izlerini taşıyan köklü şehir.",
+        "highlights": ["Anıtkabir", "Anadolu Medeniyetleri Müzesi", "Hamamönü", "Kocatepe Camii"]
+      },
+      {
+        "name": "Trabzon",
+        "region": "blacksea",
+        "description": "Karadeniz'in incisi. Sümela Manastırı, yaylalar ve muhteşem doğasıyla Doğu Karadeniz'in en büyüleyici şehri.",
+        "highlights": ["Sümela Manastırı", "Uzungöl", "Ayder Yaylası", "Çal Mağarası"]
+      },
+      {
+        "name": "Rize",
+        "region": "blacksea",
+        "description": "Çay bahçeleri, yemyeşil yaylalar ve zipline parkurlarıyla doğayla iç içe bir deneyim sunan Karadeniz cenneti.",
+        "highlights": ["Çay Bahçeleri", "Ayder Yaylası", "Fırtına Vadisi", "Zilkale"]
       }
     ]
   },
   "services": {
     "sectionTitle": "Hizmetlerimiz",
     "subtitle": "Size en iyi seyahat deneyimini sunmak için buradayız",
+    "pageSubtitle": "Profesyonel turizm hizmetlerimizle hayalinizdeki tatili gerçeğe dönüştürüyoruz",
     "items": [
       {
         "title": "Paket Turlar",
-        "description": "Her bütçeye uygun, özenle planlanmış tur paketleri ile hayalinizdeki tatili yaşayın."
+        "description": "Her bütçeye uygun, özenle planlanmış tur paketleri ile hayalinizdeki tatili yaşayın.",
+        "longDesc": "Yurt içi ve yurt dışı turlarımızla dünyanın dört bir yanını keşfedin. Kültür turlarından macera turlarına, balayı paketlerinden aile turlarına kadar geniş yelpazemizle hayalinizdeki tatili sunuyoruz. Tüm turlarımız deneyimli tur liderlerimiz eşliğinde, özenle planlanmış programlarla gerçekleştirilir.",
+        "features": ["Kültür & Tarih Turları", "Macera & Doğa Turları", "Balayı Paketleri", "Aile Turları", "Kruvaziyer Turları", "Günübirlik Turlar"]
       },
       {
         "title": "Otel Rezervasyonu",
-        "description": "Dünya genelinde binlerce otelde en uygun fiyat garantisi ile konaklama imkanı."
+        "description": "Dünya genelinde binlerce otelde en uygun fiyat garantisi ile konaklama imkanı.",
+        "longDesc": "Türkiye'nin ve dünyanın en seçkin otellerinde sizin için en uygun konaklama seçeneklerini sunuyoruz. Butik otellerden 5 yıldızlı resort otellere, apart otellerden villa kiralama seçeneklerine kadar her ihtiyaca uygun konaklama çözümleri.",
+        "features": ["5 Yıldızlı Oteller", "Butik Oteller", "Apart Oteller", "Villa Kiralama", "Her Şey Dahil Tatil", "Erken Rezervasyon İndirimleri"]
       },
       {
         "title": "Transfer Hizmetleri",
-        "description": "Havalimanı transferinden şehir içi ulaşıma kadar konforlu ve güvenli transfer çözümleri."
+        "description": "Havalimanı transferinden şehir içi ulaşıma kadar konforlu ve güvenli transfer çözümleri.",
+        "longDesc": "Konforlu ve güvenli transfer hizmetlerimizle seyahatinize kesintisiz devam edin. VIP araçlar, profesyonel sürücüler ve 7/24 hizmet anlayışımızla havalimanı transferinden şehirlerarası ulaşıma kadar her noktada yanınızdayız.",
+        "features": ["Havalimanı Transferi", "Otel Transferi", "VIP Transfer", "Grup Transferi", "Şehirlerarası Transfer", "7/24 Hizmet"]
       },
       {
         "title": "Rehberlik Hizmetleri",
-        "description": "Profesyonel ve deneyimli rehberlerimiz eşliğinde kültürel ve tarihi turlar."
+        "description": "Profesyonel ve deneyimli rehberlerimiz eşliğinde kültürel ve tarihi turlar.",
+        "longDesc": "Lisanslı ve deneyimli rehberlerimiz eşliğinde unutulmaz kültürel deneyimler yaşayın. Türkiye'nin zengin tarihini ve kültürünü en iyi şekilde keşfetmenizi sağlıyoruz. Çok dilli rehberlik hizmetimizle her milletten misafirlerimize özel turlar düzenliyoruz.",
+        "features": ["Lisanslı Rehberler", "Çok Dilli Hizmet", "Özel Turlar", "Kültürel Deneyimler", "Tarihi Tur Rotaları", "Gastronomi Turları"]
       }
     ]
   },

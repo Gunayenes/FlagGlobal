@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About Us",
     "destinations": "Destinations",
+    "services": "Services",
     "certificates": "Certificates",
     "contact": "Contact"
   },
@@ -29,44 +30,129 @@
   "destinations": {
     "sectionTitle": "Featured Destinations",
     "subtitle": "Discover the most beautiful places in Turkey",
+    "allRegions": "All Regions",
+    "regions": {
+      "aegean": "Aegean",
+      "mediterranean": "Mediterranean",
+      "marmara": "Marmara",
+      "blacksea": "Black Sea",
+      "central": "Central"
+    },
     "items": [
       {
-        "name": "Antalya",
-        "description": "The pearl of the Mediterranean with its turquoise waters, golden beaches, and historical richness. Antalya is a unique holiday paradise where nature and history meet in perfect harmony."
+        "name": "Kuşadası",
+        "region": "aegean",
+        "description": "Gateway to ancient Ephesus, surrounded by Pigeon Island, Pamucak Beaches, Ladies Beach and National Park. A perfect blend of nature, luxury hotels, and delicious local cuisine.",
+        "highlights": ["Ephesus", "Virgin Mary House", "Şirince Village", "Pigeon Island"]
       },
       {
         "name": "Bodrum",
-        "description": "Enchanting Bodrum with its blue-flag beaches, historic castle, and vibrant nightlife. An unforgettable vacation experience with luxury marinas and authentic stone houses."
+        "region": "aegean",
+        "description": "Enchanting Bodrum with its blue-flag beaches, historic castle, and vibrant nightlife. An unforgettable vacation experience with luxury marinas and authentic stone houses.",
+        "highlights": ["Bodrum Castle", "Halicarnassus", "Gümbet", "Bitez"]
       },
       {
-        "name": "Cappadocia",
-        "description": "A fairytale world with fairy chimneys, underground cities, and hot air balloons. Cappadocia is a unique place created by nature and history together."
+        "name": "Muğla",
+        "region": "aegean",
+        "description": "Where sun, blue and green intertwine. Hundreds of ancient cities and ruins shed light on 8,000 years of history, with turquoise waters and untouched coves.",
+        "highlights": ["Dalyan", "Ölüdeniz", "Fethiye", "Kayaköy"]
+      },
+      {
+        "name": "İzmir",
+        "region": "aegean",
+        "description": "The pearl of the Aegean, enchanting with its historic Kemeraltı Bazaar, Kordon waterfront and ancient cities in surrounding districts.",
+        "highlights": ["Kemeraltı", "Kordon", "Çeşme", "Alaçatı"]
+      },
+      {
+        "name": "Antalya",
+        "region": "mediterranean",
+        "description": "A city where sea, sun, history and nature harmonize beautifully. Atatürk described it as 'Without a doubt, the most beautiful place in the world.'",
+        "highlights": ["Aspendos", "Old Town (Kaleiçi)", "Düden Waterfalls", "Konyaaltı Beach"]
+      },
+      {
+        "name": "Marmaris",
+        "region": "mediterranean",
+        "description": "A stunning cruise port where the Aegean and Mediterranean meet. Perfect for sailing, diving, and exploring hidden coves along the coastline.",
+        "highlights": ["Dalaman", "İçmeler", "Boat Tours", "Old Town"]
+      },
+      {
+        "name": "Alanya",
+        "region": "mediterranean",
+        "description": "The jewel of the Mediterranean with Cleopatra Beach, its historic castle and unique natural beauties. A city where historical and modern holiday concepts meet.",
+        "highlights": ["Cleopatra Beach", "Alanya Castle", "Dim River", "Damlataş Cave"]
       },
       {
         "name": "Istanbul",
-        "description": "The megacity bridging two continents, blending thousands of years of history with modern life. A unique experience from Hagia Sophia to the Grand Bazaar, from the Bosphorus to the Islands."
+        "region": "marmara",
+        "description": "The megacity bridging two continents, blending thousands of years of history with modern life. A unique experience from Hagia Sophia to the Grand Bazaar, from the Bosphorus to the Islands.",
+        "highlights": ["Hagia Sophia", "Topkapi Palace", "Grand Bazaar", "Bosphorus Cruise"]
+      },
+      {
+        "name": "Çanakkale",
+        "region": "marmara",
+        "description": "A city that leapt from the pages of history. A cultural treasure filled with the Gallipoli Peninsula, ancient city of Troy and Strait views.",
+        "highlights": ["Troy", "Gallipoli", "Bozcaada", "Martyrs' Memorial"]
+      },
+      {
+        "name": "Bursa",
+        "region": "marmara",
+        "description": "The first capital of the Ottoman Empire, adorned with a thousand shades of green at the foot of Uludağ. Famous for its historic silk road, thermal springs and İskender kebab.",
+        "highlights": ["Uludağ", "Cumalıkızık", "Grand Mosque", "Koza Han"]
+      },
+      {
+        "name": "Cappadocia",
+        "region": "central",
+        "description": "A fairytale world with fairy chimneys, underground cities, and hot air balloons. Cappadocia is a unique place created by nature and history together.",
+        "highlights": ["Balloon Tour", "Göreme", "Underground Cities", "Ihlara Valley"]
+      },
+      {
+        "name": "Ankara",
+        "region": "central",
+        "description": "The capital of the Republic of Turkey, the heart of modern Turkey with Anıtkabir and museums. A rooted city bearing traces of Anatolian civilizations.",
+        "highlights": ["Anıtkabir", "Museum of Anatolian Civilizations", "Hamamönü", "Kocatepe Mosque"]
+      },
+      {
+        "name": "Trabzon",
+        "region": "blacksea",
+        "description": "The pearl of the Black Sea. The most enchanting city of the Eastern Black Sea with Sumela Monastery, plateaus and magnificent nature.",
+        "highlights": ["Sumela Monastery", "Uzungöl", "Ayder Plateau", "Çal Cave"]
+      },
+      {
+        "name": "Rize",
+        "region": "blacksea",
+        "description": "A Black Sea paradise offering an experience immersed in nature with tea gardens, lush green plateaus and zipline courses.",
+        "highlights": ["Tea Gardens", "Ayder Plateau", "Fırtına Valley", "Zilkale"]
       }
     ]
   },
   "services": {
     "sectionTitle": "Our Services",
     "subtitle": "We are here to offer you the best travel experience",
+    "pageSubtitle": "We turn your dream vacation into reality with our professional tourism services",
     "items": [
       {
         "title": "Package Tours",
-        "description": "Live your dream vacation with carefully planned tour packages suitable for every budget."
+        "description": "Live your dream vacation with carefully planned tour packages suitable for every budget.",
+        "longDesc": "Explore the four corners of the world with our domestic and international tours. From culture tours to adventure tours, honeymoon packages to family tours, we offer your dream vacation with our wide range. All our tours are carried out with carefully planned programs led by experienced tour leaders.",
+        "features": ["Culture & History Tours", "Adventure & Nature Tours", "Honeymoon Packages", "Family Tours", "Cruise Tours", "Day Trips"]
       },
       {
         "title": "Hotel Reservation",
-        "description": "Accommodation opportunities at thousands of hotels worldwide with best price guarantee."
+        "description": "Accommodation opportunities at thousands of hotels worldwide with best price guarantee.",
+        "longDesc": "We offer the most suitable accommodation options for you at the finest hotels in Turkey and around the world. From boutique hotels to 5-star resorts, apart hotels to villa rentals, accommodation solutions for every need.",
+        "features": ["5-Star Hotels", "Boutique Hotels", "Apart Hotels", "Villa Rental", "All-Inclusive Holidays", "Early Booking Discounts"]
       },
       {
         "title": "Transfer Services",
-        "description": "Comfortable and safe transfer solutions from airport transfers to city transportation."
+        "description": "Comfortable and safe transfer solutions from airport transfers to city transportation.",
+        "longDesc": "Continue your journey seamlessly with our comfortable and safe transfer services. VIP vehicles, professional drivers, and our 24/7 service approach – we are by your side at every point from airport transfers to intercity transportation.",
+        "features": ["Airport Transfer", "Hotel Transfer", "VIP Transfer", "Group Transfer", "Intercity Transfer", "24/7 Service"]
       },
       {
         "title": "Guide Services",
-        "description": "Cultural and historical tours accompanied by our professional and experienced guides."
+        "description": "Cultural and historical tours accompanied by our professional and experienced guides.",
+        "longDesc": "Experience unforgettable cultural experiences with our licensed and experienced guides. We ensure you discover Turkey's rich history and culture in the best possible way. With our multilingual guide service, we organize special tours for guests from every nation.",
+        "features": ["Licensed Guides", "Multilingual Service", "Private Tours", "Cultural Experiences", "Historical Tour Routes", "Gastronomy Tours"]
       }
     ]
   },
