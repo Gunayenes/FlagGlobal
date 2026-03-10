@@ -266,6 +266,16 @@
     "subtitle": "Comfortable accommodation at our partner hotels",
     "pageSubtitle": "Discover our partner hotels in Turkey's most beautiful destinations, especially Kuşadası and Bodrum",
     "allCities": "All Cities",
+    "allRegions": "All Regions",
+    "regions": {
+      "aegean": "Aegean",
+      "mediterranean": "Mediterranean",
+      "marmara": "Marmara",
+      "blacksea": "Black Sea",
+      "central": "Central"
+    },
+    "searchPlaceholder": "Search hotel name or city...",
+    "noResults": "No hotels found matching your search.",
     "stars": "Stars",
     "perNight": "/ night",
     "features": "Features",

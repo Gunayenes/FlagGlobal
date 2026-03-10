@@ -266,6 +266,16 @@
     "subtitle": "Anlaşmalı otellerimizde konforlu konaklama",
     "pageSubtitle": "Kuşadası ve Bodrum başta olmak üzere Türkiye'nin en güzel destinasyonlarındaki anlaşmalı otellerimizi keşfedin",
     "allCities": "Tüm Şehirler",
+    "allRegions": "Tüm Bölgeler",
+    "regions": {
+      "aegean": "Ege",
+      "mediterranean": "Akdeniz",
+      "marmara": "Marmara",
+      "blacksea": "Karadeniz",
+      "central": "İç Anadolu"
+    },
+    "searchPlaceholder": "Otel adı veya şehir ara...",
+    "noResults": "Aramanızla eşleşen otel bulunamadı.",
     "stars": "Yıldız",
     "perNight": "/ gece",
     "features": "Özellikler",

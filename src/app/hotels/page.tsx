@@ -36,12 +36,38 @@ type HotelItem = {
 export default function HotelsPage() {
   const { t } = useI18n();
   const [activeCity, setActiveCity] = useState("all");
+  const [activeRegion, setActiveRegion] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const cities = [...new Set(t.hotels.items.map((item: HotelItem) => item.city))] as string[];
+  const regions = Object.keys(t.hotels.regions) as string[];
 
-  const filteredItems = activeCity === "all"
-    ? t.hotels.items
-    : t.hotels.items.filter((item: HotelItem) => item.city === activeCity);
+  const filteredItems = t.hotels.items.filter((item: HotelItem) => {
+    const matchesRegion = activeRegion === "all" || item.region === activeRegion;
+    const matchesCity = activeCity === "all" || item.city === activeCity;
+    const query = searchQuery.toLowerCase();
+    const matchesSearch =
+      !query ||
+      item.name.toLowerCase().includes(query) ||
+      item.city.toLowerCase().includes(query);
+    return matchesRegion && matchesCity && matchesSearch;
+  });
+
+  // When region changes, reset city filter
+  const handleRegionChange = (region: string) => {
+    setActiveRegion(region);
+    setActiveCity("all");
+  };
+
+  // Get cities for the active region
+  const visibleCities =
+    activeRegion === "all"
+      ? cities
+      : cities.filter((city) =>
+          t.hotels.items.some(
+            (item: HotelItem) => item.city === city && item.region === activeRegion
+          )
+        );
 
   return (
     <>
@@ -64,29 +90,83 @@ export default function HotelsPage() {
         </div>
       </section>
 
-      {/* City Filter + Grid */}
+      {/* Search + Filters + Grid */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* City Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mb-14">
+
+          {/* Search Bar */}
+          <div className="max-w-xl mx-auto mb-10">
+            <div className="relative">
+              <svg
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={t.hotels.searchPlaceholder}
+                className="w-full pl-12 pr-4 py-3.5 rounded-full border border-gray-200 bg-white text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+              />
+            </div>
+          </div>
+
+          {/* Region Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
             <button
-              onClick={() => setActiveCity("all")}
+              onClick={() => handleRegionChange("all")}
               className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeCity === "all"
+                activeRegion === "all"
                   ? "bg-blue-900 text-white shadow-lg"
                   : "bg-white text-gray-700 border border-gray-200 hover:border-blue-900 hover:text-blue-900"
               }`}
             >
+              {t.hotels.allRegions}
+            </button>
+            {regions.map((regionKey) => (
+              <button
+                key={regionKey}
+                onClick={() => handleRegionChange(regionKey)}
+                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeRegion === regionKey
+                    ? "bg-blue-900 text-white shadow-lg"
+                    : "bg-white text-gray-700 border border-gray-200 hover:border-blue-900 hover:text-blue-900"
+                }`}
+              >
+                {t.hotels.regions[regionKey]}
+              </button>
+            ))}
+          </div>
+
+          {/* City Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-2 mb-14">
+            <button
+              onClick={() => setActiveCity("all")}
+              className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
+                activeCity === "all"
+                  ? "bg-amber-500 text-white shadow-md"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-amber-500 hover:text-amber-600"
+              }`}
+            >
               {t.hotels.allCities}
             </button>
-            {cities.map((city) => (
+            {visibleCities.map((city) => (
               <button
                 key={city}
                 onClick={() => setActiveCity(city)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
                   activeCity === city
-                    ? "bg-blue-900 text-white shadow-lg"
-                    : "bg-white text-gray-700 border border-gray-200 hover:border-blue-900 hover:text-blue-900"
+                    ? "bg-amber-500 text-white shadow-md"
+                    : "bg-white text-gray-600 border border-gray-200 hover:border-amber-500 hover:text-amber-600"
                 }`}
               >
                 {city}
@@ -95,20 +175,29 @@ export default function HotelsPage() {
           </div>
 
           {/* Hotel Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredItems.map((item: HotelItem) => (
-              <HotelCard
-                key={item.name}
-                name={item.name}
-                city={item.city}
-                stars={item.stars}
-                description={item.description}
-                features={item.features}
-                image={hotelImages[item.name] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"}
-                starsLabel={t.hotels.stars}
-              />
-            ))}
-          </div>
+          {filteredItems.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredItems.map((item: HotelItem) => (
+                <HotelCard
+                  key={item.name}
+                  name={item.name}
+                  city={item.city}
+                  stars={item.stars}
+                  description={item.description}
+                  features={item.features}
+                  image={hotelImages[item.name] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"}
+                  starsLabel={t.hotels.stars}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <svg className="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <p className="text-gray-500 text-lg">{t.hotels.noResults}</p>
+            </div>
+          )}
         </div>
       </section>
     </>
