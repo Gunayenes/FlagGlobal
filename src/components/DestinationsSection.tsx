@@ -15,13 +15,13 @@ const destinationImages: Record<string, string> = {
   "Alanya": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
   "İstanbul": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80",
   "Istanbul": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80",
-  "Çanakkale": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7de?w=800&q=80",
-  "Bursa": "https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?w=800&q=80",
-  "Kapadokya": "https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?w=800&q=80",
-  "Cappadocia": "https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?w=800&q=80",
-  "Ankara": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=800&q=80",
-  "Trabzon": "https://images.unsplash.com/photo-1597040663342-45b6ba68fa1e?w=800&q=80",
-  "Rize": "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800&q=80",
+  "Çanakkale": "https://images.unsplash.com/photo-1568781269951-b50a89d02c68?w=800&q=80",
+  "Bursa": "https://images.unsplash.com/photo-1564594326930-fd1072c5e01a?w=800&q=80",
+  "Kapadokya": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&q=80",
+  "Cappadocia": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800&q=80",
+  "Ankara": "https://images.unsplash.com/photo-1594817563715-8a4e1fa47e1e?w=800&q=80",
+  "Trabzon": "https://images.unsplash.com/photo-1572953109213-3be62398eb95?w=800&q=80",
+  "Rize": "https://images.unsplash.com/photo-1624367171718-14026220f3b1?w=800&q=80",
 };
 
 const regionIcons: Record<string, string> = {
