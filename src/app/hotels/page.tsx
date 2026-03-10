@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useI18n } from "@/context/I18nContext";
 import HotelCard from "@/components/HotelCard";
+import TiltCard from "@/components/TiltCard";
 import HotelDetailModal from "@/components/HotelDetailModal";
 
 const hotelImages: Record<string, string> = {
@@ -181,18 +182,19 @@ export default function HotelsPage() {
           {filteredItems.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredItems.map((item: HotelItem) => (
-                <HotelCard
-                  key={item.name}
-                  name={item.name}
-                  city={item.city}
-                  stars={item.stars}
-                  description={item.description}
-                  features={item.features}
-                  image={hotelImages[item.name] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"}
-                  starsLabel={t.hotels.stars}
-                  viewDetailsLabel={t.hotels.viewDetails}
-                  onClick={() => setSelectedHotel(item)}
-                />
+                <TiltCard key={item.name}>
+                  <HotelCard
+                    name={item.name}
+                    city={item.city}
+                    stars={item.stars}
+                    description={item.description}
+                    features={item.features}
+                    image={hotelImages[item.name] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"}
+                    starsLabel={t.hotels.stars}
+                    viewDetailsLabel={t.hotels.viewDetails}
+                    onClick={() => setSelectedHotel(item)}
+                  />
+                </TiltCard>
               ))}
             </div>
           ) : (

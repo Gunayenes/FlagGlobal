@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useI18n } from "@/context/I18nContext";
 import DestinationCard from "@/components/DestinationCard";
+import TiltCard from "@/components/TiltCard";
 
 const destinationImages: Record<string, string> = {
   "Kuşadası": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80",
@@ -102,16 +103,17 @@ export default function DestinationsPage() {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredItems.map((item: DestinationItem) => (
-              <DestinationCard
-                key={item.name}
-                name={item.name}
-                description={item.description}
-                image={destinationImages[item.name] || "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80"}
-                region={item.region}
-                regionLabel={t.destinations.regions[item.region]}
-                highlights={item.highlights}
-                icon={regionIcons[item.region] || "🏛️"}
-              />
+              <TiltCard key={item.name}>
+                <DestinationCard
+                  name={item.name}
+                  description={item.description}
+                  image={destinationImages[item.name] || "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80"}
+                  region={item.region}
+                  regionLabel={t.destinations.regions[item.region]}
+                  highlights={item.highlights}
+                  icon={regionIcons[item.region] || "🏛️"}
+                />
+              </TiltCard>
             ))}
           </div>
         </div>

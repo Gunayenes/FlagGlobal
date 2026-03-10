@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import BackToTop from "@/components/BackToTop";
 import LoadingScreen from "@/components/LoadingScreen";
+import ScrollProgressBar from "@/components/ScrollProgressBar";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -25,6 +26,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <I18nProvider>
       <LoadingScreen />
+      <ScrollProgressBar />
       <div className="fixed-bg" aria-hidden="true" />
       <Navbar />
       <main

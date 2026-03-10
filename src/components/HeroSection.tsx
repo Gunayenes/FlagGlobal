@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { useI18n } from "@/context/I18nContext";
 
@@ -15,6 +15,9 @@ export default function HeroSection() {
   const { t } = useI18n();
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [parallaxY, setParallaxY] = useState(0);
+  const heroRef = useRef<HTMLElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
 
   const goTo = useCallback((idx: number) => {
     setIsTransitioning(true);
@@ -31,23 +34,70 @@ export default function HeroSection() {
     return () => clearInterval(timer);
   }, [current, goTo]);
 
+  // Parallax effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setParallaxY(window.scrollY * 0.4);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Cursor glow
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    if (glowRef.current) {
+      const rect = heroRef.current?.getBoundingClientRect();
+      if (rect) {
+        glowRef.current.style.left = `${e.clientX - rect.left}px`;
+        glowRef.current.style.top = `${e.clientY - rect.top}px`;
+      }
+    }
+  }, []);
+
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background slides */}
+    <section
+      ref={heroRef}
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+      onMouseMove={handleMouseMove}
+    >
+      {/* Background slides with parallax */}
       {heroImages.map((img, idx) => (
         <div
           key={idx}
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
             idx === current ? "opacity-100" : "opacity-0"
           }`}
-          style={{ backgroundImage: `url('${img}')` }}
+          style={{
+            backgroundImage: `url('${img}')`,
+            transform: `translateY(${parallaxY}px) scale(1.1)`,
+          }}
         />
       ))}
       <div className={`absolute inset-0 bg-gradient-to-b from-blue-900/70 via-blue-900/50 to-blue-900/80 transition-opacity duration-500 ${isTransitioning ? "opacity-90" : "opacity-100"}`} />
 
+      {/* Cursor glow */}
+      <div ref={glowRef} className="cursor-glow" />
+
+      {/* Floating particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {Array.from({ length: 15 }).map((_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDuration: `${8 + Math.random() * 12}s`,
+              animationDelay: `${Math.random() * 8}s`,
+              width: `${2 + Math.random() * 4}px`,
+              height: `${2 + Math.random() * 4}px`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Content */}
       <div className={`relative z-10 text-center px-4 max-w-4xl mx-auto transition-all duration-500 ${isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}`}>
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight gradient-text">
           {t.hero.title}
         </h1>
         <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
@@ -55,7 +105,7 @@ export default function HeroSection() {
         </p>
         <Link
           href="/destinations"
-          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:-translate-y-0.5 glow-button"
         >
           {t.hero.cta}
         </Link>
