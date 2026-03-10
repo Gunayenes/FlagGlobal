@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useI18n } from "@/context/I18nContext";
 import HotelCard from "@/components/HotelCard";
+import HotelDetailModal from "@/components/HotelDetailModal";
 
 const hotelImages: Record<string, string> = {
   "Pine Bay Holiday Resort": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
@@ -31,6 +32,7 @@ type HotelItem = {
   stars: number;
   description: string;
   features: string[];
+  highlights: string[];
 };
 
 export default function HotelsPage() {
@@ -38,6 +40,7 @@ export default function HotelsPage() {
   const [activeCity, setActiveCity] = useState("all");
   const [activeRegion, setActiveRegion] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedHotel, setSelectedHotel] = useState<HotelItem | null>(null);
 
   const cities = [...new Set(t.hotels.items.map((item: HotelItem) => item.city))] as string[];
   const regions = Object.keys(t.hotels.regions) as string[];
@@ -187,6 +190,8 @@ export default function HotelsPage() {
                   features={item.features}
                   image={hotelImages[item.name] || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"}
                   starsLabel={t.hotels.stars}
+                  viewDetailsLabel={t.hotels.viewDetails}
+                  onClick={() => setSelectedHotel(item)}
                 />
               ))}
             </div>
@@ -200,6 +205,22 @@ export default function HotelsPage() {
           )}
         </div>
       </section>
+
+      {/* Hotel Detail Modal */}
+      {selectedHotel && (
+        <HotelDetailModal
+          hotel={selectedHotel}
+          labels={{
+            highlights: t.hotels.highlights,
+            gallery: t.hotels.gallery,
+            location: t.hotels.location,
+            close: t.hotels.close,
+            stars: t.hotels.stars,
+            features: t.hotels.features,
+          }}
+          onClose={() => setSelectedHotel(null)}
+        />
+      )}
     </>
   );
 }

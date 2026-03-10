@@ -6,11 +6,16 @@ interface HotelCardProps {
   features: string[];
   image: string;
   starsLabel: string;
+  viewDetailsLabel: string;
+  onClick?: () => void;
 }
 
-export default function HotelCard({ name, city, stars, description, features, image, starsLabel }: HotelCardProps) {
+export default function HotelCard({ name, city, stars, description, features, image, starsLabel, viewDetailsLabel, onClick }: HotelCardProps) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <div
+      className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer group"
+      onClick={onClick}
+    >
       {/* Image */}
       <div className="relative h-56 overflow-hidden">
         <div
@@ -40,7 +45,7 @@ export default function HotelCard({ name, city, stars, description, features, im
         </p>
 
         {/* Features */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-4">
           {features.slice(0, 4).map((feat, i) => (
             <span key={i} className="text-xs px-2.5 py-1 bg-blue-50 text-blue-800 rounded-full">
               {feat}
@@ -52,6 +57,11 @@ export default function HotelCard({ name, city, stars, description, features, im
             </span>
           )}
         </div>
+
+        {/* View Details Button */}
+        <button className="w-full py-2.5 bg-blue-900 text-white text-sm font-medium rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {viewDetailsLabel}
+        </button>
       </div>
     </div>
   );
