@@ -9,6 +9,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import BackToTop from "@/components/BackToTop";
 import LoadingScreen from "@/components/LoadingScreen";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
+import CustomCursor from "@/components/CustomCursor";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -26,6 +27,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <I18nProvider>
       <LoadingScreen />
+      <CustomCursor />
       <ScrollProgressBar />
       <div className="fixed-bg" aria-hidden="true" />
       <Navbar />
