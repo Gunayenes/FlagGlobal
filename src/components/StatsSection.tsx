@@ -6,6 +6,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
+  const [flipping, setFlipping] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
@@ -17,6 +18,7 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
+          setFlipping(true);
           const duration = 2000;
           const steps = 60;
           const increment = target / steps;
@@ -26,6 +28,7 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
             if (current >= target) {
               setCount(target);
               clearInterval(timer);
+              setTimeout(() => setFlipping(false), 300);
             } else {
               setCount(Math.floor(current));
             }
@@ -39,9 +42,20 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
     return () => observer.disconnect();
   }, [target]);
 
+  const digits = count.toLocaleString().split("");
+
   return (
-    <span ref={ref} className="text-4xl sm:text-5xl font-bold text-white">
-      {count.toLocaleString()}{suffix}
+    <span ref={ref} className="text-4xl sm:text-5xl font-bold text-white inline-flex items-baseline">
+      {digits.map((char, i) => (
+        <span
+          key={`${i}-${char}`}
+          className={char !== "," && char !== "." ? "counter-digit" : ""}
+          style={char !== "," && char !== "." ? { animationDelay: `${i * 0.05}s` } : {}}
+        >
+          {char}
+        </span>
+      ))}
+      {suffix && <span className={flipping ? "counter-digit" : ""}>{suffix}</span>}
     </span>
   );
 }

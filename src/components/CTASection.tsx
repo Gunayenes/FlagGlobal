@@ -29,7 +29,7 @@ export default function CTASection() {
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:-translate-y-0.5 glow-button"
         >
           {t.cta.button}
         </Link>

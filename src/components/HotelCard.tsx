@@ -13,7 +13,7 @@ interface HotelCardProps {
 export default function HotelCard({ name, city, stars, description, features, image, starsLabel, viewDetailsLabel, onClick }: HotelCardProps) {
   return (
     <div
-      className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer group card-shine"
+      className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer group card-shine hover-float"
       onClick={onClick}
     >
       {/* Image */}

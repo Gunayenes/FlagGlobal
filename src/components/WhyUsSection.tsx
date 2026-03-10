@@ -16,14 +16,15 @@ export default function WhyUsSection() {
   const cardsAnim = useScrollAnimation(0.1);
 
   return (
-    <section className="py-24 section-glass-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 section-glass-dark text-white noise-overlay">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           ref={titleAnim.ref}
           className={`text-center mb-16 animate-on-scroll ${titleAnim.isVisible ? "visible" : ""}`}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             {t.whyUs.sectionTitle}
+            <span className={`heading-line ${titleAnim.isVisible ? "animate" : ""}`} style={{ background: 'linear-gradient(90deg, #fbbf24, #ffffff)' }} />
           </h2>
         </div>
 
@@ -35,7 +36,7 @@ export default function WhyUsSection() {
             (item: { title: string; description: string }, idx: number) => (
               <div
                 key={idx}
-                className={`text-center p-8 rounded-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 animate-on-scroll delay-${idx + 1} ${cardsAnim.isVisible ? "visible" : ""}`}
+                className={`text-center p-8 rounded-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 hover-float animate-on-scroll delay-${idx + 1} ${cardsAnim.isVisible ? "visible" : ""}`}
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-500 text-white mb-6">
                   {whyIcons[idx]}

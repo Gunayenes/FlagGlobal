@@ -16,8 +16,11 @@ export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [parallaxY, setParallaxY] = useState(0);
+  const [displayedTitle, setDisplayedTitle] = useState("");
+  const [typewriterDone, setTypewriterDone] = useState(false);
   const heroRef = useRef<HTMLElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
+  const prevTitle = useRef("");
 
   const goTo = useCallback((idx: number) => {
     setIsTransitioning(true);
@@ -42,6 +45,25 @@ export default function HeroSection() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Typewriter effect
+  useEffect(() => {
+    const title = t.hero.title;
+    if (prevTitle.current === title) return;
+    prevTitle.current = title;
+    setDisplayedTitle("");
+    setTypewriterDone(false);
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setDisplayedTitle(title.slice(0, i));
+      if (i >= title.length) {
+        clearInterval(interval);
+        setTypewriterDone(true);
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  }, [t.hero.title]);
 
   // Cursor glow
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
@@ -98,7 +120,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className={`relative z-10 text-center px-4 max-w-4xl mx-auto transition-all duration-500 ${isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}`}>
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight gradient-text">
-          {t.hero.title}
+          {displayedTitle}
+          {!typewriterDone && <span className="typewriter-cursor">&nbsp;</span>}
         </h1>
         <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
           {t.hero.subtitle}

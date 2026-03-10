@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { useI18n } from "@/context/I18nContext";
 import { usePathname } from "next/navigation";
@@ -10,6 +10,19 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const navLinksRef = useRef<HTMLDivElement>(null);
+
+  const handleMagnetic = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    const el = e.currentTarget;
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+  }, []);
+
+  const resetMagnetic = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.transform = "translate(0, 0)";
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -49,12 +62,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div ref={navLinksRef} className="hidden md:flex items-center gap-8">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-amber-500 ${
+                onMouseMove={handleMagnetic}
+                onMouseLeave={resetMagnetic}
+                className={`text-sm font-medium transition-all hover:text-amber-500 magnetic-link hover-underline ${
                   pathname === link.href
                     ? "text-amber-500"
                     : scrolled

@@ -18,7 +18,7 @@ const regionIcons: Record<string, string> = {
 
 export default function DestinationCard({ name, description, image, region, regionLabel, highlights, icon }: DestinationCardProps) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 card-shine">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 card-shine hover-float">
       {/* Image */}
       <div className="relative h-56 sm:h-64 overflow-hidden">
         <div

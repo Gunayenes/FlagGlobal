@@ -52,14 +52,15 @@ export default function DestinationsSection() {
     : t.destinations.items.filter((item: DestinationItem) => item.region === activeRegion);
 
   return (
-    <section className="py-24 section-glass-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 section-glass-light mesh-gradient">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           ref={titleAnim.ref}
           className={`text-center mb-12 animate-on-scroll ${titleAnim.isVisible ? "visible" : ""}`}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             {t.destinations.sectionTitle}
+            <span className={`heading-line ${titleAnim.isVisible ? "animate" : ""}`} />
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             {t.destinations.subtitle}
